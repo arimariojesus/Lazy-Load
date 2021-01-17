@@ -11,6 +11,7 @@ body {
   padding-right: 15px;
   padding-top: 0;
   min-height: 100vh;
+  font-family: sans-serif;
 }
 
 main {
@@ -45,4 +46,15 @@ main div {
 main div img {
   max-width: 100%;
   height: auto;
+}
+
+img[data-src] {
+  opacity: 0;
+  transform: scale(0);
+}
+
+img[src] {
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s ease-in-out;
 }
